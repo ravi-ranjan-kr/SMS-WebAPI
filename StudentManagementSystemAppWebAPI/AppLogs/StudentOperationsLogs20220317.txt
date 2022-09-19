@@ -1,0 +1,633 @@
+2022-03-17T22:03:46.4447808+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:03:46.4594805+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:03:46.4640492+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:03:46.4682196+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:03:48.7130680+05:30 0HMG86FKBJK11:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T22:03:50.4754304+05:30 0HMG86FKBJK11:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1768.0894ms (791a596a)
+2022-03-17T22:03:50.8153764+05:30 0HMG86FKBJK11:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T22:03:50.8224267+05:30 0HMG86FKBJK11:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 6.8325ms (791a596a)
+2022-03-17T22:03:51.4559906+05:30 0HMG86FKBJK11:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T22:03:52.1094277+05:30 0HMG86FKBJK11:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 653.4248ms (791a596a)
+2022-03-17T22:04:01.2680871+05:30 0HMG86FKBJK12:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - (ca22a1cb)
+2022-03-17T22:04:01.4297394+05:30 0HMG86FKBJK12:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:04:01.5959620+05:30 0HMG86FKBJK12:00000002 [INF] Route matched with "{action = \"GetAllStudents\", controller = \"Student\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:04:03.8976494+05:30 0HMG86FKBJK12:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)" in 2279.1144ms (afa2e885)
+2022-03-17T22:04:03.8991980+05:30 0HMG86FKBJK12:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:04:04.4479074+05:30 0HMG86FKBJK12:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'StudentManagementSystemAppWebAPI.Controllers.StudentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-17T22:04:04.4617901+05:30 0HMG86FKBJK12:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - - 500 - text/plain 3193.6817ms (791a596a)
+2022-03-17T22:04:30.6620829+05:30 0HMG86FKBJK13:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/SearcStudentById/empid?stuid=1 - - (ca22a1cb)
+2022-03-17T22:04:30.6851257+05:30 0HMG86FKBJK13:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:04:30.7424727+05:30 0HMG86FKBJK13:00000002 [INF] Route matched with "{action = \"SearcStudentById\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentById(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:04:30.7467055+05:30 0HMG86FKBJK13:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)" in 4.0449ms (afa2e885)
+2022-03-17T22:04:30.7472709+05:30 0HMG86FKBJK13:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:04:30.8475147+05:30 0HMG86FKBJK13:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'StudentManagementSystemAppWebAPI.Controllers.StudentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method13(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-17T22:04:30.8492139+05:30 0HMG86FKBJK13:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/SearcStudentById/empid?stuid=1 - - - 500 - text/plain 187.4386ms (791a596a)
+2022-03-17T22:10:15.2579991+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:10:15.2885453+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:10:15.2929921+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:10:15.2963651+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:10:18.7545169+05:30 0HMG86J86FJJH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T22:10:19.9180427+05:30 0HMG86J86FJJH:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1180.6242ms (791a596a)
+2022-03-17T22:10:20.0379303+05:30 0HMG86J86FJJH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T22:10:20.0435637+05:30 0HMG86J86FJJH:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 5.4565ms (791a596a)
+2022-03-17T22:10:20.7716713+05:30 0HMG86J86FJJH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T22:10:21.3306095+05:30 0HMG86J86FJJH:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 558.9894ms (791a596a)
+2022-03-17T22:10:27.5207642+05:30 0HMG86J86FJJI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - (ca22a1cb)
+2022-03-17T22:10:27.6999728+05:30 0HMG86J86FJJI:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:10:27.8038329+05:30 0HMG86J86FJJI:00000002 [INF] Route matched with "{action = \"GetAllStudents\", controller = \"Student\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:10:29.8544418+05:30 0HMG86J86FJJI:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:10:32.0710525+05:30 0HMG86J86FJJI:00000002 [WRN] The entity type '"SrNo"' has the [Keyless] attribute, but the [Key] attribute was specified on property '"StudentMarks"'; the two are incompatible, consider removing one. Note that the entity will have no key unless you configure one in 'OnModelCreating'. (bb47d214)
+2022-03-17T22:10:33.1390079+05:30 0HMG86J86FJJI:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:10:37.3039520+05:30 0HMG86J86FJJI:00000002 [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]" (0723d8ff)
+2022-03-17T22:10:37.6018483+05:30 0HMG86J86FJJI:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:10:37.6123648+05:30 0HMG86J86FJJI:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.Student, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T22:10:37.6513137+05:30 0HMG86J86FJJI:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)" in 9833.226ms (afa2e885)
+2022-03-17T22:10:37.6522853+05:30 0HMG86J86FJJI:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:10:37.6621529+05:30 0HMG86J86FJJI:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - - 200 - application/json;+charset=utf-8 10141.3777ms (791a596a)
+2022-03-17T22:11:00.0713936+05:30 0HMG86J86FJJJ:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Student/DeleteStudentByEmpId?stuid=5 - - (ca22a1cb)
+2022-03-17T22:11:00.0819023+05:30 0HMG86J86FJJJ:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.DeleteStudentByEmpId (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:11:00.1435661+05:30 0HMG86J86FJJJ:00000002 [INF] Route matched with "{action = \"DeleteStudentByEmpId\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult DeleteStudentByEmpId(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:11:00.1904095+05:30 0HMG86J86FJJJ:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:11:00.3061252+05:30 0HMG86J86FJJJ:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:11:00.8036736+05:30 0HMG86J86FJJJ:00000002 [INF] Executed DbCommand ("138"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T22:11:01.1981614+05:30 0HMG86J86FJJJ:00000002 [INF] Executed DbCommand ("30"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Student]
+WHERE [StudentID] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-17T22:11:01.2526104+05:30 0HMG86J86FJJJ:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:11:01.2534701+05:30 0HMG86J86FJJJ:00000002 [INF] Executing "OkObjectResult", writing value of type '"StudentManagementServiceLayer.Views.ResponseModel"'. (605b4265)
+2022-03-17T22:11:01.2557627+05:30 0HMG86J86FJJJ:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.DeleteStudentByEmpId (StudentManagementSystemAppWebAPI)" in 1112.023ms (afa2e885)
+2022-03-17T22:11:01.2659364+05:30 0HMG86J86FJJJ:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.DeleteStudentByEmpId (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:11:01.2715215+05:30 0HMG86J86FJJJ:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Student/DeleteStudentByEmpId?stuid=5 - - - 200 - application/json;+charset=utf-8 1201.7216ms (791a596a)
+2022-03-17T22:11:15.8034808+05:30 0HMG86J86FJJK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/SearcStudentById/empid?stuid=1 - - (ca22a1cb)
+2022-03-17T22:11:15.8040853+05:30 0HMG86J86FJJK:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:11:15.8105708+05:30 0HMG86J86FJJK:00000002 [INF] Route matched with "{action = \"SearcStudentById\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentById(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:11:15.8432928+05:30 0HMG86J86FJJK:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:11:15.8961651+05:30 0HMG86J86FJJK:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:11:15.9351071+05:30 0HMG86J86FJJK:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T22:11:15.9481696+05:30 0HMG86J86FJJK:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:11:15.9484354+05:30 0HMG86J86FJJK:00000002 [INF] Executing "OkObjectResult", writing value of type '"StudentManagementDomainLayer.Models.Student"'. (605b4265)
+2022-03-17T22:11:15.9487662+05:30 0HMG86J86FJJK:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)" in 138.0991ms (afa2e885)
+2022-03-17T22:11:15.9488235+05:30 0HMG86J86FJJK:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:11:15.9489891+05:30 0HMG86J86FJJK:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/SearcStudentById/empid?stuid=1 - - - 200 - application/json;+charset=utf-8 146.7056ms (791a596a)
+2022-03-17T22:11:46.0188864+05:30 0HMG86J86FJJL:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Student/AddStudentById application/json 89 (ca22a1cb)
+2022-03-17T22:11:46.0192054+05:30 0HMG86J86FJJL:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.AddStudentById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:11:46.0224509+05:30 0HMG86J86FJJL:00000002 [INF] Route matched with "{action = \"AddStudentById\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddStudentById(StudentManagementDomainLayer.Models.Student)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:11:46.2549467+05:30 0HMG86J86FJJL:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:11:46.2574758+05:30 0HMG86J86FJJL:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:11:46.3804158+05:30 0HMG86J86FJJL:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Student] ([StudentCourse], [StudentFirstName], [StudentLastName])
+VALUES (@p0, @p1, @p2);
+SELECT [StudentID]
+FROM [Student]
+WHERE @@ROWCOUNT = 1 AND [StudentID] = scope_identity();" (0723d8ff)
+2022-03-17T22:11:46.4296421+05:30 0HMG86J86FJJL:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:11:46.4298572+05:30 0HMG86J86FJJL:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-17T22:11:46.4302624+05:30 0HMG86J86FJJL:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.AddStudentById (StudentManagementSystemAppWebAPI)" in 407.7414ms (afa2e885)
+2022-03-17T22:11:46.4303178+05:30 0HMG86J86FJJL:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.AddStudentById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:11:46.4304719+05:30 0HMG86J86FJJL:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Student/AddStudentById application/json 89 - 200 - text/plain;+charset=utf-8 411.6462ms (791a596a)
+2022-03-17T22:11:55.5045074+05:30 0HMG86J86FJJM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T22:11:55.5053434+05:30 0HMG86J86FJJM:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:11:55.5193521+05:30 0HMG86J86FJJM:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:11:55.5320970+05:30 0HMG86J86FJJM:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:11:55.5331474+05:30 0HMG86J86FJJM:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:11:55.6073805+05:30 0HMG86J86FJJM:00000002 [ERR] Failed executing DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (627a98df)
+2022-03-17T22:18:52.8453215+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:18:52.8618127+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:18:52.8686481+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:18:52.8961100+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:18:55.6255764+05:30 0HMG86O2ENAO4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T22:18:56.8828124+05:30 0HMG86O2ENAO3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T22:18:56.8958860+05:30 0HMG86O2ENAO3:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 6.4574ms (791a596a)
+2022-03-17T22:18:56.9590256+05:30 0HMG86O2ENAO4:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1362.5621ms (791a596a)
+2022-03-17T22:18:57.6966044+05:30 0HMG86O2ENAO3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T22:18:58.2724779+05:30 0HMG86O2ENAO3:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 575.8993ms (791a596a)
+2022-03-17T22:19:07.4547030+05:30 0HMG86O2ENAO5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T22:19:07.5885312+05:30 0HMG86O2ENAO5:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:19:07.7826387+05:30 0HMG86O2ENAO5:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:19:08.7721882+05:30 0HMG86O2ENAO5:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:19:10.7552508+05:30 0HMG86O2ENAO5:00000002 [WRN] The entity type '"SrNo"' has the [Keyless] attribute, but the [Key] attribute was specified on property '"StudentMarks"'; the two are incompatible, consider removing one. Note that the entity will have no key unless you configure one in 'OnModelCreating'. (bb47d214)
+2022-03-17T22:19:11.8044416+05:30 0HMG86O2ENAO5:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:19:14.3869897+05:30 0HMG86O2ENAO5:00000002 [ERR] Failed executing DbCommand ("140"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (627a98df)
+2022-03-17T22:19:14.8076456+05:30 0HMG86O2ENAO5:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"StudentManagementRepositoryLayer.ApplicationContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SrNo'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:8e513119-31f3-427a-a774-af604e916144
+Error Number:207,State:1,Class:16" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SrNo'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentManagementServiceLayer.Services.StudentMarksService.GetStudentMarksList() in D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementServiceLayer\Services\StudentMarksService.cs:line 31
+ClientConnectionId:8e513119-31f3-427a-a774-af604e916144
+Error Number:207,State:1,Class:16
+2022-03-17T22:19:15.3092420+05:30 0HMG86O2ENAO5:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 7507.8954ms (afa2e885)
+2022-03-17T22:19:15.3127665+05:30 0HMG86O2ENAO5:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:19:15.5106220+05:30 0HMG86O2ENAO5:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SrNo'.
+   at StudentManagementServiceLayer.Services.StudentMarksService.GetStudentMarksList() in D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementServiceLayer\Services\StudentMarksService.cs:line 35
+   at StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks() in D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI\Controllers\StudentMarksController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:8e513119-31f3-427a-a774-af604e916144
+Error Number:207,State:1,Class:16
+2022-03-17T22:19:15.5383159+05:30 0HMG86O2ENAO5:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 500 - text/plain 8083.5313ms (791a596a)
+2022-03-17T22:19:24.6594363+05:30 0HMG86O2ENAO6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - (ca22a1cb)
+2022-03-17T22:19:24.6654013+05:30 0HMG86O2ENAO6:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:19:24.6798882+05:30 0HMG86O2ENAO6:00000002 [INF] Route matched with "{action = \"GetAllStudents\", controller = \"Student\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:19:24.6969005+05:30 0HMG86O2ENAO6:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:19:25.8678750+05:30 0HMG86O2ENAO6:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:19:25.9763788+05:30 0HMG86O2ENAO6:00000002 [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]" (0723d8ff)
+2022-03-17T22:19:26.1674285+05:30 0HMG86O2ENAO6:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:19:26.1792833+05:30 0HMG86O2ENAO6:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.Student, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T22:19:26.2127825+05:30 0HMG86O2ENAO6:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)" in 1532.6984ms (afa2e885)
+2022-03-17T22:19:26.2128756+05:30 0HMG86O2ENAO6:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:19:26.2131934+05:30 0HMG86O2ENAO6:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - - 200 - application/json;+charset=utf-8 1553.8358ms (791a596a)
+2022-03-17T22:21:39.8362157+05:30  [WRN] The entity type '"SrNo"' has the [Keyless] attribute, but the [Key] attribute was specified on property '"StudentMarks"'; the two are incompatible, consider removing one. Note that the entity will have no key unless you configure one in 'OnModelCreating'. (bb47d214)
+2022-03-17T22:21:40.4511293+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:21:57.5469529+05:30  [WRN] The entity type '"SrNo"' has the [Keyless] attribute, but the [Key] attribute was specified on property '"StudentMarks"'; the two are incompatible, consider removing one. Note that the entity will have no key unless you configure one in 'OnModelCreating'. (bb47d214)
+2022-03-17T22:21:58.4110267+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:22:39.2415287+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:23:22.9920039+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:23:23.8128803+05:30  [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-17T22:23:23.9048057+05:30  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-17T22:23:23.9139659+05:30  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-17T22:23:23.9149626+05:30  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-17T22:23:24.1317573+05:30  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2022-03-17T22:23:24.1756744+05:30  [INF] Applying migration '"20220317165158_Init"'. (0e2ac64d)
+2022-03-17T22:23:24.3969908+05:30  [ERR] Failed executing DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Student] (
+    [StudentID] int NOT NULL IDENTITY,
+    [StudentFirstName] nvarchar(max) NOT NULL,
+    [StudentLastName] nvarchar(max) NULL,
+    [StudentCourse] nvarchar(max) NULL,
+    CONSTRAINT [PK_Student] PRIMARY KEY ([StudentID])
+);" (627a98df)
+2022-03-17T22:29:13.7188525+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:29:13.7587063+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:29:13.7713957+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:29:13.7782540+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:29:41.3562739+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:29:41.3901148+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:29:41.4165804+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:29:41.4322180+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:29:45.7083428+05:30 0HMG86U3NFARV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T22:29:47.0753502+05:30 0HMG86U3NFARV:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1389.0454ms (791a596a)
+2022-03-17T22:29:51.8661424+05:30 0HMG86U3NFARV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T22:29:51.8762630+05:30 0HMG86U3NFARV:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 9.9588ms (791a596a)
+2022-03-17T22:29:53.6434974+05:30 0HMG86U3NFARV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T22:29:54.1623673+05:30 0HMG86U3NFARV:00000004 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 518.8628ms (791a596a)
+2022-03-17T22:30:01.4158371+05:30 0HMG86U3NFAS0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T22:30:01.5775177+05:30 0HMG86U3NFAS0:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:30:01.7158255+05:30 0HMG86U3NFAS0:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:30:02.4109657+05:30 0HMG86U3NFAS0:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:30:04.9760625+05:30 0HMG86U3NFAS0:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:30:07.1115427+05:30 0HMG86U3NFAS0:00000002 [ERR] Failed executing DbCommand ("92"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (627a98df)
+2022-03-17T22:30:07.3850599+05:30 0HMG86U3NFAS0:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"StudentManagementRepositoryLayer.ApplicationContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SrNo'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:aab62146-cf37-4283-8d86-33904cee0083
+Error Number:207,State:1,Class:16" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SrNo'.
+   at StudentManagementServiceLayer.Services.StudentMarksService.GetStudentMarksList() in D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementServiceLayer\Services\StudentMarksService.cs:line 35
+ClientConnectionId:aab62146-cf37-4283-8d86-33904cee0083
+Error Number:207,State:1,Class:16
+2022-03-17T22:30:07.9544406+05:30 0HMG86U3NFAS0:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 6218.118ms (afa2e885)
+2022-03-17T22:30:07.9595412+05:30 0HMG86U3NFAS0:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:30:08.0701760+05:30 0HMG86U3NFAS0:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SrNo'.
+   at StudentManagementServiceLayer.Services.StudentMarksService.GetStudentMarksList() in D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementServiceLayer\Services\StudentMarksService.cs:line 35
+   at StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks() in D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI\Controllers\StudentMarksController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:aab62146-cf37-4283-8d86-33904cee0083
+Error Number:207,State:1,Class:16
+2022-03-17T22:30:08.0922341+05:30 0HMG86U3NFAS0:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 500 - text/plain 6676.3328ms (791a596a)
+2022-03-17T22:35:17.1122586+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:35:58.7352076+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:36:19.9664933+05:30  [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:36:20.7491316+05:30  [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-17T22:36:20.8018033+05:30  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-17T22:36:20.8076641+05:30  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-03-17T22:36:20.8083733+05:30  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-03-17T22:36:20.8417323+05:30  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2022-03-17T22:36:20.8729506+05:30  [INF] Applying migration '"20220317170558_Init"'. (0e2ac64d)
+2022-03-17T22:36:20.9650515+05:30  [ERR] Failed executing DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [Student] (
+    [StudentID] int NOT NULL IDENTITY,
+    [StudentFirstName] nvarchar(max) NOT NULL,
+    [StudentLastName] nvarchar(max) NULL,
+    [StudentCourse] nvarchar(max) NULL,
+    CONSTRAINT [PK_Student] PRIMARY KEY ([StudentID])
+);" (627a98df)
+2022-03-17T22:50:08.4746488+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:50:08.5221723+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:50:08.5582450+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:50:08.5676749+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:50:12.1720676+05:30 0HMG879HHIRM3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T22:50:16.8901300+05:30 0HMG879HHIRM4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T22:50:16.8995148+05:30 0HMG879HHIRM4:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 6.2732ms (791a596a)
+2022-03-17T22:50:16.9021770+05:30 0HMG879HHIRM3:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 4868.4777ms (791a596a)
+2022-03-17T22:50:17.9075215+05:30 0HMG879HHIRM3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T22:50:18.3904676+05:30 0HMG879HHIRM3:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 482.6736ms (791a596a)
+2022-03-17T22:50:25.7054298+05:30 0HMG879HHIRM5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T22:50:25.9303617+05:30 0HMG879HHIRM5:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:50:26.0819722+05:30 0HMG879HHIRM5:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:50:29.1062239+05:30 0HMG879HHIRM5:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:50:32.3100009+05:30 0HMG879HHIRM5:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:50:35.0600533+05:30 0HMG879HHIRM5:00000002 [INF] Executed DbCommand ("84"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (0723d8ff)
+2022-03-17T22:50:35.1137916+05:30 0HMG879HHIRM5:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:50:35.1372321+05:30 0HMG879HHIRM5:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.StudentMarks, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T22:50:35.1643436+05:30 0HMG879HHIRM5:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 9071.267ms (afa2e885)
+2022-03-17T22:50:35.1654284+05:30 0HMG879HHIRM5:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:50:35.1756509+05:30 0HMG879HHIRM5:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 200 - application/json;+charset=utf-8 9470.2519ms (791a596a)
+2022-03-17T22:51:27.9723249+05:30 0HMG879HHIRM6:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/StudentMarks/AddStudentMarksById application/json 51 (ca22a1cb)
+2022-03-17T22:51:27.9826159+05:30 0HMG879HHIRM6:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:51:28.0140176+05:30 0HMG879HHIRM6:00000002 [INF] Route matched with "{action = \"AddStudentMarksById\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddStudentMarksById(StudentManagementDomainLayer.Models.StudentMarks)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:51:28.1655797+05:30 0HMG879HHIRM6:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:51:28.2547199+05:30 0HMG879HHIRM6:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:51:28.7178365+05:30 0HMG879HHIRM6:00000002 [INF] Executed DbCommand ("76"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [stuMarks] ([SrNo], [StuMarks], [StuSem], [StudentID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-17T22:51:28.7509675+05:30 0HMG879HHIRM6:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:51:28.7519235+05:30 0HMG879HHIRM6:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-17T22:51:28.7524112+05:30 0HMG879HHIRM6:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)" in 738.2697ms (afa2e885)
+2022-03-17T22:51:28.7524965+05:30 0HMG879HHIRM6:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:51:28.7527235+05:30 0HMG879HHIRM6:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/StudentMarks/AddStudentMarksById application/json 51 - 200 - text/plain;+charset=utf-8 780.4296ms (791a596a)
+2022-03-17T22:51:43.7600265+05:30 0HMG879HHIRM7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T22:51:43.7603099+05:30 0HMG879HHIRM7:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:51:43.7606729+05:30 0HMG879HHIRM7:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:51:43.7679844+05:30 0HMG879HHIRM7:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:51:44.7891498+05:30 0HMG879HHIRM7:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:51:44.7916246+05:30 0HMG879HHIRM7:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (0723d8ff)
+2022-03-17T22:51:44.8122304+05:30 0HMG879HHIRM7:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:51:44.8126752+05:30 0HMG879HHIRM7:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.StudentMarks, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T22:51:44.8143472+05:30 0HMG879HHIRM7:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 1053.5736ms (afa2e885)
+2022-03-17T22:51:44.8144597+05:30 0HMG879HHIRM7:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:51:44.8147462+05:30 0HMG879HHIRM7:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 200 - application/json;+charset=utf-8 1054.7759ms (791a596a)
+2022-03-17T22:52:04.8357164+05:30 0HMG879HHIRM8:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/StudentMarks/AddStudentMarksById application/json 51 (ca22a1cb)
+2022-03-17T22:52:04.8360798+05:30 0HMG879HHIRM8:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:52:04.8362482+05:30 0HMG879HHIRM8:00000002 [INF] Route matched with "{action = \"AddStudentMarksById\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddStudentMarksById(StudentManagementDomainLayer.Models.StudentMarks)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:52:04.8461073+05:30 0HMG879HHIRM8:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:52:04.8476166+05:30 0HMG879HHIRM8:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:52:04.8502603+05:30 0HMG879HHIRM8:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [stuMarks] ([SrNo], [StuMarks], [StuSem], [StudentID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-17T22:52:04.8568658+05:30 0HMG879HHIRM8:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:52:04.8570665+05:30 0HMG879HHIRM8:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-17T22:52:04.8573028+05:30 0HMG879HHIRM8:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)" in 21.0045ms (afa2e885)
+2022-03-17T22:52:04.8573700+05:30 0HMG879HHIRM8:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:52:04.8575128+05:30 0HMG879HHIRM8:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/StudentMarks/AddStudentMarksById application/json 51 - 200 - text/plain;+charset=utf-8 21.8087ms (791a596a)
+2022-03-17T22:52:13.3298631+05:30 0HMG879HHIRM9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T22:52:13.3300896+05:30 0HMG879HHIRM9:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:52:13.3302501+05:30 0HMG879HHIRM9:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:52:13.3348590+05:30 0HMG879HHIRM9:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:52:14.3621479+05:30 0HMG879HHIRM9:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T22:52:14.3771367+05:30 0HMG879HHIRM9:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (0723d8ff)
+2022-03-17T22:52:14.4257244+05:30 0HMG879HHIRM9:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T22:52:14.4260627+05:30 0HMG879HHIRM9:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.StudentMarks, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T22:52:14.4263135+05:30 0HMG879HHIRM9:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 1095.9867ms (afa2e885)
+2022-03-17T22:52:14.4263755+05:30 0HMG879HHIRM9:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T22:52:14.4266591+05:30 0HMG879HHIRM9:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 200 - application/json;+charset=utf-8 1096.7889ms (791a596a)
+2022-03-17T22:59:29.1170389+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T22:59:29.1878010+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T22:59:29.2197178+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T22:59:29.2479545+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T22:59:32.1061428+05:30 0HMG87EOF6D0I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T22:59:33.6179473+05:30 0HMG87EOF6D0J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T22:59:33.6417323+05:30 0HMG87EOF6D0J:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 19.2451ms (791a596a)
+2022-03-17T22:59:34.1417863+05:30 0HMG87EOF6D0I:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 2078.3741ms (791a596a)
+2022-03-17T22:59:34.6083882+05:30 0HMG87EOF6D0I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T22:59:35.1370445+05:30 0HMG87EOF6D0I:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 528.7277ms (791a596a)
+2022-03-17T22:59:50.0787289+05:30 0HMG87EOF6D0K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=2 - - (ca22a1cb)
+2022-03-17T22:59:50.2365346+05:30 0HMG87EOF6D0K:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T22:59:50.3826393+05:30 0HMG87EOF6D0K:00000002 [INF] Route matched with "{action = \"SearcStudentBySem\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentBySem(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T22:59:52.7917359+05:30 0HMG87EOF6D0K:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T22:59:54.8866587+05:30 0HMG87EOF6D0K:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:00:00.0085246+05:30 0HMG87EOF6D0K:00000002 [INF] Executed DbCommand ("340"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T23:00:00.0865145+05:30 0HMG87EOF6D0K:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:00:00.1124526+05:30 0HMG87EOF6D0K:00000002 [INF] Executing "OkObjectResult", writing value of type '"null"'. (605b4265)
+2022-03-17T23:00:00.1345380+05:30 0HMG87EOF6D0K:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)" in 9729.8748ms (afa2e885)
+2022-03-17T23:00:00.1351365+05:30 0HMG87EOF6D0K:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:00:00.1903177+05:30 0HMG87EOF6D0K:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=2 - - - 204 0 - 10111.4776ms (791a596a)
+2022-03-17T23:00:03.6106295+05:30 0HMG87EOF6D0L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T23:00:03.6254436+05:30 0HMG87EOF6D0L:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:00:03.6345216+05:30 0HMG87EOF6D0L:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:00:03.6432977+05:30 0HMG87EOF6D0L:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:00:04.7061166+05:30 0HMG87EOF6D0L:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:00:04.7468670+05:30 0HMG87EOF6D0L:00000002 [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (0723d8ff)
+2022-03-17T23:00:04.9315486+05:30 0HMG87EOF6D0L:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:00:04.9404281+05:30 0HMG87EOF6D0L:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.StudentMarks, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T23:00:04.9571059+05:30 0HMG87EOF6D0L:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 1322.4402ms (afa2e885)
+2022-03-17T23:00:04.9587694+05:30 0HMG87EOF6D0L:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:00:04.9597474+05:30 0HMG87EOF6D0L:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 200 - application/json;+charset=utf-8 1349.1740ms (791a596a)
+2022-03-17T23:00:44.7217218+05:30 0HMG87EOF6D0M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=100 - - (ca22a1cb)
+2022-03-17T23:00:44.7224380+05:30 0HMG87EOF6D0M:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:00:44.7297334+05:30 0HMG87EOF6D0M:00000002 [INF] Route matched with "{action = \"SearcStudentBySem\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentBySem(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:00:44.7619768+05:30 0HMG87EOF6D0M:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:00:44.7819696+05:30 0HMG87EOF6D0M:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:00:44.8604441+05:30 0HMG87EOF6D0M:00000002 [INF] Executed DbCommand ("69"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T23:00:44.8689291+05:30 0HMG87EOF6D0M:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:00:44.8691354+05:30 0HMG87EOF6D0M:00000002 [INF] Executing "OkObjectResult", writing value of type '"null"'. (605b4265)
+2022-03-17T23:00:44.8693519+05:30 0HMG87EOF6D0M:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)" in 139.5157ms (afa2e885)
+2022-03-17T23:00:44.8694598+05:30 0HMG87EOF6D0M:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:00:44.8696607+05:30 0HMG87EOF6D0M:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=100 - - - 204 0 - 147.9310ms (791a596a)
+2022-03-17T23:02:29.4404968+05:30 0HMG87EOF6D0N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=1 - - (ca22a1cb)
+2022-03-17T23:02:29.4408142+05:30 0HMG87EOF6D0N:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:02:29.4412389+05:30 0HMG87EOF6D0N:00000002 [INF] Route matched with "{action = \"SearcStudentBySem\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentBySem(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:02:29.4568766+05:30 0HMG87EOF6D0N:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:02:29.4591785+05:30 0HMG87EOF6D0N:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:02:29.5092892+05:30 0HMG87EOF6D0N:00000002 [INF] Executed DbCommand ("45"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T23:02:29.5604147+05:30 0HMG87EOF6D0N:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:02:29.5608466+05:30 0HMG87EOF6D0N:00000002 [INF] Executing "OkObjectResult", writing value of type '"StudentManagementDomainLayer.Models.Student"'. (605b4265)
+2022-03-17T23:02:29.5687624+05:30 0HMG87EOF6D0N:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)" in 127.2845ms (afa2e885)
+2022-03-17T23:02:29.5695006+05:30 0HMG87EOF6D0N:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:02:29.5698089+05:30 0HMG87EOF6D0N:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=1 - - - 200 - application/json;+charset=utf-8 129.3194ms (791a596a)
+2022-03-17T23:08:08.6221403+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T23:08:08.6452058+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T23:08:08.6527440+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T23:08:08.6626081+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T23:08:13.0184026+05:30 0HMG87JJDU99E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T23:08:14.7047474+05:30 0HMG87JJDU99E:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 1702.7211ms (791a596a)
+2022-03-17T23:08:14.9499245+05:30 0HMG87JJDU99F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T23:08:14.9665739+05:30 0HMG87JJDU99F:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 15.3447ms (791a596a)
+2022-03-17T23:08:15.7668962+05:30 0HMG87JJDU99F:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T23:08:16.2855132+05:30 0HMG87JJDU99F:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 518.7387ms (791a596a)
+2022-03-17T23:08:28.8611756+05:30 0HMG87JJDU99G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T23:08:28.9964188+05:30 0HMG87JJDU99G:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:08:29.0983177+05:30 0HMG87JJDU99G:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:08:30.1122288+05:30 0HMG87JJDU99G:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:08:32.9860910+05:30 0HMG87JJDU99G:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:08:36.1323277+05:30 0HMG87JJDU99G:00000002 [INF] Executed DbCommand ("117"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (0723d8ff)
+2022-03-17T23:08:36.3912599+05:30 0HMG87JJDU99G:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:08:36.4176289+05:30 0HMG87JJDU99G:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.StudentMarks, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T23:08:36.4706884+05:30 0HMG87JJDU99G:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 7348.7761ms (afa2e885)
+2022-03-17T23:08:36.4772027+05:30 0HMG87JJDU99G:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:08:36.5132603+05:30 0HMG87JJDU99G:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 200 - application/json;+charset=utf-8 7652.0248ms (791a596a)
+2022-03-17T23:09:14.7576451+05:30 0HMG87JJDU99H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=2 - - (ca22a1cb)
+2022-03-17T23:09:14.7780230+05:30 0HMG87JJDU99H:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:09:14.8322652+05:30 0HMG87JJDU99H:00000002 [INF] Route matched with "{action = \"SearcStudentBySem\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentBySem(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:09:14.8789319+05:30 0HMG87JJDU99H:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:09:14.9731386+05:30 0HMG87JJDU99H:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:09:15.5648980+05:30 0HMG87JJDU99H:00000002 [INF] Executed DbCommand ("152"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]
+WHERE [s].[SrNo] = @__p_0" (0723d8ff)
+2022-03-17T23:09:15.5717214+05:30 0HMG87JJDU99H:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:09:15.5725477+05:30 0HMG87JJDU99H:00000002 [INF] Executing "OkObjectResult", writing value of type '"StudentManagementDomainLayer.Models.StudentMarks"'. (605b4265)
+2022-03-17T23:09:15.5729355+05:30 0HMG87JJDU99H:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)" in 740.5481ms (afa2e885)
+2022-03-17T23:09:15.5729933+05:30 0HMG87JJDU99H:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.SearcStudentBySem (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:09:15.5732737+05:30 0HMG87JJDU99H:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/SearcStudentBySem/sem?sem=2 - - - 200 - application/json;+charset=utf-8 815.6531ms (791a596a)
+2022-03-17T23:32:09.6536014+05:30  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-03-17T23:32:09.9394462+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-03-17T23:32:10.4579456+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-03-17T23:32:10.6453145+05:30  [INF] Content root path: "D:\CAPG\StudentManagementSystem\StudentManagementSystem\StudentManagementSystemAppWebAPI" (b5d60022)
+2022-03-17T23:32:15.0492193+05:30 0HMG8810R9SQ4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - (ca22a1cb)
+2022-03-17T23:32:19.0254786+05:30 0HMG8810R9SQ4:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 3989.4813ms (791a596a)
+2022-03-17T23:32:22.4929985+05:30 0HMG8810R9SQ4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-03-17T23:32:22.5513812+05:30 0HMG8810R9SQ4:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 12022 application/javascript;+charset=utf-8 58.1307ms (791a596a)
+2022-03-17T23:32:25.6014266+05:30 0HMG8810R9SQ5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - (ca22a1cb)
+2022-03-17T23:32:26.2784871+05:30 0HMG8810R9SQ5:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 677.0520ms (791a596a)
+2022-03-17T23:32:34.5025703+05:30 0HMG8810R9SQ5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - (ca22a1cb)
+2022-03-17T23:32:34.6748901+05:30 0HMG8810R9SQ5:00000003 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:32:34.8459129+05:30 0HMG8810R9SQ5:00000003 [INF] Route matched with "{action = \"GetAllStudents\", controller = \"Student\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:32:35.8912524+05:30 0HMG8810R9SQ5:00000003 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:32:43.5798448+05:30 0HMG8810R9SQ5:00000003 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:32:46.6868043+05:30 0HMG8810R9SQ5:00000003 [INF] Executed DbCommand ("142"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]" (0723d8ff)
+2022-03-17T23:32:47.0083833+05:30 0HMG8810R9SQ5:00000003 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:32:47.0467315+05:30 0HMG8810R9SQ5:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.Student, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T23:32:47.1115050+05:30 0HMG8810R9SQ5:00000003 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)" in 12237.1946ms (afa2e885)
+2022-03-17T23:32:47.1128635+05:30 0HMG8810R9SQ5:00000003 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.GetAllStudents (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:32:47.1478090+05:30 0HMG8810R9SQ5:00000003 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/GetAllStudents - - - 200 - application/json;+charset=utf-8 12645.1627ms (791a596a)
+2022-03-17T23:33:07.6727529+05:30 0HMG8810R9SQ6:00000002 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/Student/DeleteStudentByEmpId?stuid=7 - - (ca22a1cb)
+2022-03-17T23:33:07.6836088+05:30 0HMG8810R9SQ6:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.DeleteStudentByEmpId (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:33:07.7399275+05:30 0HMG8810R9SQ6:00000002 [INF] Route matched with "{action = \"DeleteStudentByEmpId\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult DeleteStudentByEmpId(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:33:07.7973228+05:30 0HMG8810R9SQ6:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:33:07.9248148+05:30 0HMG8810R9SQ6:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:33:08.3916187+05:30 0HMG8810R9SQ6:00000002 [INF] Executed DbCommand ("100"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T23:33:08.8296221+05:30 0HMG8810R9SQ6:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Student]
+WHERE [StudentID] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2022-03-17T23:33:08.8784218+05:30 0HMG8810R9SQ6:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:33:08.8819287+05:30 0HMG8810R9SQ6:00000002 [INF] Executing "OkObjectResult", writing value of type '"StudentManagementServiceLayer.Views.ResponseModel"'. (605b4265)
+2022-03-17T23:33:08.8938538+05:30 0HMG8810R9SQ6:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.DeleteStudentByEmpId (StudentManagementSystemAppWebAPI)" in 1153.7267ms (afa2e885)
+2022-03-17T23:33:08.8939907+05:30 0HMG8810R9SQ6:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.DeleteStudentByEmpId (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:33:08.8942439+05:30 0HMG8810R9SQ6:00000002 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/Student/DeleteStudentByEmpId?stuid=7 - - - 200 - application/json;+charset=utf-8 1221.5250ms (791a596a)
+2022-03-17T23:33:21.9795100+05:30 0HMG8810R9SQ7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Student/SearcStudentById/stuid?stuid=1 - - (ca22a1cb)
+2022-03-17T23:33:21.9798543+05:30 0HMG8810R9SQ7:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:33:21.9845631+05:30 0HMG8810R9SQ7:00000002 [INF] Route matched with "{action = \"SearcStudentById\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult SearcStudentById(Int32)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:33:22.0105645+05:30 0HMG8810R9SQ7:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:33:22.0348485+05:30 0HMG8810R9SQ7:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:33:22.0502817+05:30 0HMG8810R9SQ7:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[StudentID], [s].[StudentCourse], [s].[StudentFirstName], [s].[StudentLastName]
+FROM [Student] AS [s]
+WHERE [s].[StudentID] = @__p_0" (0723d8ff)
+2022-03-17T23:33:22.0553956+05:30 0HMG8810R9SQ7:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:33:22.0560624+05:30 0HMG8810R9SQ7:00000002 [INF] Executing "OkObjectResult", writing value of type '"StudentManagementDomainLayer.Models.Student"'. (605b4265)
+2022-03-17T23:33:22.0565149+05:30 0HMG8810R9SQ7:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)" in 71.8448ms (afa2e885)
+2022-03-17T23:33:22.0565809+05:30 0HMG8810R9SQ7:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.SearcStudentById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:33:22.0567706+05:30 0HMG8810R9SQ7:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Student/SearcStudentById/stuid?stuid=1 - - - 200 - application/json;+charset=utf-8 77.2033ms (791a596a)
+2022-03-17T23:33:54.1785794+05:30 0HMG8810R9SQ8:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Student/AddStudentById application/json 89 (ca22a1cb)
+2022-03-17T23:33:54.1788232+05:30 0HMG8810R9SQ8:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.AddStudentById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:33:54.1815503+05:30 0HMG8810R9SQ8:00000002 [INF] Route matched with "{action = \"AddStudentById\", controller = \"Student\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddStudentById(StudentManagementDomainLayer.Models.Student)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:33:54.2556352+05:30 0HMG8810R9SQ8:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:33:54.2574382+05:30 0HMG8810R9SQ8:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:33:54.3710666+05:30 0HMG8810R9SQ8:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Student] ([StudentCourse], [StudentFirstName], [StudentLastName])
+VALUES (@p0, @p1, @p2);
+SELECT [StudentID]
+FROM [Student]
+WHERE @@ROWCOUNT = 1 AND [StudentID] = scope_identity();" (0723d8ff)
+2022-03-17T23:33:54.4715707+05:30 0HMG8810R9SQ8:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:33:54.4718091+05:30 0HMG8810R9SQ8:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-17T23:33:54.4724781+05:30 0HMG8810R9SQ8:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentController.AddStudentById (StudentManagementSystemAppWebAPI)" in 290.7626ms (afa2e885)
+2022-03-17T23:33:54.4725519+05:30 0HMG8810R9SQ8:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentController.AddStudentById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:33:54.4727634+05:30 0HMG8810R9SQ8:00000002 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Student/AddStudentById application/json 89 - 200 - text/plain;+charset=utf-8 294.1659ms (791a596a)
+2022-03-17T23:34:10.7451234+05:30 0HMG8810R9SQ9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - (ca22a1cb)
+2022-03-17T23:34:10.7464609+05:30 0HMG8810R9SQ9:00000002 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:34:10.7557075+05:30 0HMG8810R9SQ9:00000002 [INF] Route matched with "{action = \"GetAllStudentsMarks\", controller = \"StudentMarks\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudentsMarks()" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:34:10.8047228+05:30 0HMG8810R9SQ9:00000002 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:34:11.8325262+05:30 0HMG8810R9SQ9:00000002 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:34:11.8846331+05:30 0HMG8810R9SQ9:00000002 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SrNo], [s].[StuMarks], [s].[StuSem], [s].[StudentID]
+FROM [stuMarks] AS [s]" (0723d8ff)
+2022-03-17T23:34:11.9230549+05:30 0HMG8810R9SQ9:00000002 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:34:11.9361792+05:30 0HMG8810R9SQ9:00000002 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[StudentManagementDomainLayer.Models.StudentMarks, StudentManagementDomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-03-17T23:34:11.9392655+05:30 0HMG8810R9SQ9:00000002 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)" in 1183.4519ms (afa2e885)
+2022-03-17T23:34:11.9393549+05:30 0HMG8810R9SQ9:00000002 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.GetAllStudentsMarks (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:34:11.9396008+05:30 0HMG8810R9SQ9:00000002 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/StudentMarks/GetAllStudentsMarks - - - 200 - application/json;+charset=utf-8 1194.5364ms (791a596a)
+2022-03-17T23:34:47.1428830+05:30 0HMG8810R9SQ9:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/StudentMarks/AddStudentMarksById application/json 49 (ca22a1cb)
+2022-03-17T23:34:47.1556577+05:30 0HMG8810R9SQ9:00000003 [INF] Executing endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)"' (500cc934)
+2022-03-17T23:34:47.1599494+05:30 0HMG8810R9SQ9:00000003 [INF] Route matched with "{action = \"AddStudentMarksById\", controller = \"StudentMarks\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult AddStudentMarksById(StudentManagementDomainLayer.Models.StudentMarks)" on controller "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController" ("StudentManagementSystemAppWebAPI"). (122b2fdf)
+2022-03-17T23:34:47.1990916+05:30 0HMG8810R9SQ9:00000003 [INF] student endpoint starts (651fc0bf)
+2022-03-17T23:34:47.2004696+05:30 0HMG8810R9SQ9:00000003 [INF] Entity Framework Core "5.0.15" initialized '"ApplicationContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-03-17T23:34:47.2183114+05:30 0HMG8810R9SQ9:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [stuMarks] ([SrNo], [StuMarks], [StuSem], [StudentID])
+VALUES (@p0, @p1, @p2, @p3);" (0723d8ff)
+2022-03-17T23:34:47.2299952+05:30 0HMG8810R9SQ9:00000003 [INF] student endpoint completed (8d84a830)
+2022-03-17T23:34:47.2301708+05:30 0HMG8810R9SQ9:00000003 [INF] Executing "OkObjectResult", writing value of type '"System.String"'. (605b4265)
+2022-03-17T23:34:47.2304109+05:30 0HMG8810R9SQ9:00000003 [INF] Executed action "StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)" in 70.3962ms (afa2e885)
+2022-03-17T23:34:47.2304876+05:30 0HMG8810R9SQ9:00000003 [INF] Executed endpoint '"StudentManagementSystemAppWebAPI.Controllers.StudentMarksController.AddStudentMarksById (StudentManagementSystemAppWebAPI)"' (99874f2b)
+2022-03-17T23:34:47.2306241+05:30 0HMG8810R9SQ9:00000003 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/StudentMarks/AddStudentMarksById application/json 49 - 200 - text/plain;+charset=utf-8 87.7543ms (791a596a)
